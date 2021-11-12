@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="700" viewBox="0 0 500 700">
+  <g id="Group_1266" data-name="Group 1266" transform="translate(4099 -3820)">
+    <rect id="pic" width="500" height="700" transform="translate(-4099 3820)" fill="#ebebeb"/>
+    <g id="Group_1268" data-name="Group 1268" transform="translate(0 20.517)">
+      <path id="movie-player-play-button" d="M92.938,0a92.938,92.938,0,1,0,92.938,92.938A92.933,92.933,0,0,0,92.938,0Zm44.471,100.4L81.972,138.537a9.057,9.057,0,0,1-14.195-7.461V54.8a9.057,9.057,0,0,1,14.195-7.461l55.437,38.137a9.057,9.057,0,0,1,0,14.923Z" transform="translate(-3942 4015.483)" fill="#abb3c6"/>
+      <g id="Group_1267" data-name="Group 1267" transform="translate(2190 1203)">
+        <g id="icons8-igtv" transform="translate(-6095 3072.131)">
+          <path id="Path_1931" data-name="Path 1931" d="M20.919,3,14.959,8.959,9,3" transform="translate(0.932 -3)" fill="none" stroke="#abb3c6" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/>
+          <path id="Path_1932" data-name="Path 1932" d="M35.783,14.932V26.851a9.943,9.943,0,0,1-9.932,9.932H13.932A9.943,9.943,0,0,1,4,26.851V14.932A9.943,9.943,0,0,1,13.932,5H25.851A9.943,9.943,0,0,1,35.783,14.932ZM20.374,24.8l7.946-1.986a1.986,1.986,0,0,0-.961-3.854l-5.481,1.369V18.905a1.988,1.988,0,0,0-2.469-1.927l-7.946,1.986a1.986,1.986,0,1,0,.963,3.854l5.479-1.369v1.428A1.986,1.986,0,0,0,20.374,24.8Z" transform="translate(-4 -1.027)" fill="#abb3c6"/>
+        </g>
+        <text id="IGTV" transform="translate(-5984 3103)" fill="#abb3c6" font-size="31" font-family="ArialMT, Arial"><tspan x="-72.338" y="0">IGTV</tspan></text>
+      </g>
+    </g>
+  </g>
+</svg>

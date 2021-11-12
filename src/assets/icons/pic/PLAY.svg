@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="210.448" viewBox="0 0 300 210.448">
+  <g id="Group_1012" data-name="Group 1012" transform="translate(6202 -4137)">
+    <g id="Group_1011" data-name="Group 1011" transform="translate(-2103 260)">
+      <path id="pic" d="M10,0H290a10,10,0,0,1,10,10V210.448a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V10A10,10,0,0,1,10,0Z" transform="translate(-4099 3877)" fill="#ebebeb"/>
+      <path id="movie-player-play-button" d="M39.179,0A39.179,39.179,0,1,0,78.359,39.179,39.177,39.177,0,0,0,39.179,0ZM57.927,42.325,34.557,58.4a3.818,3.818,0,0,1-5.984-3.145V23.1a3.818,3.818,0,0,1,5.984-3.145l23.37,16.077a3.818,3.818,0,0,1,0,6.291Z" transform="translate(-3988 3943)" fill="#abb3c6"/>
+    </g>
+  </g>
+</svg>

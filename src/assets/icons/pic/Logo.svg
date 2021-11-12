@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="99.952" height="99" viewBox="0 0 99.952 99">
+  <defs>
+    <linearGradient id="linear-gradient" y1="0.5" x2="1" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#55bec5"/>
+      <stop offset="1" stop-color="#00a3e2"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_1226" data-name="Group 1226" transform="translate(-968 -53)">
+    <text id="سامانه_ناظران_" data-name="سامانه ناظران " transform="translate(970 141)" fill="#234275" font-size="18" font-family="IRANSans-Medium, IRANSans" font-weight="500"><tspan x="0" y="0">سامانه ناظران</tspan><tspan y="0"> </tspan></text>
+    <g id="Group_1225" data-name="Group 1225" transform="translate(661.876 -73.689)">
+      <path id="Path_2004" data-name="Path 2004" d="M446.249,231.384a17.354,17.354,0,0,0-9.889,3.075,7.166,7.166,0,1,1-3.664,3.393,17.435,17.435,0,1,0,13.554-6.469Z" transform="translate(-86.762 -86.766)" fill="url(#linear-gradient)"/>
+      <path id="Path_2005" data-name="Path 2005" d="M405.058,205.984,385.3,186.225a35.335,35.335,0,1,0-5.369,4.685l20.1,20.1a3.477,3.477,0,0,0,4.915,0l.111-.113A3.474,3.474,0,0,0,405.058,205.984Zm-45.57-15.69a28.241,28.241,0,1,1,28.241-28.241A28.241,28.241,0,0,1,359.488,190.294Z" transform="translate(0 0)" fill="#234275"/>
+    </g>
+  </g>
+</svg>

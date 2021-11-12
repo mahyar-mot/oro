@@ -1,0 +1,42 @@
+.card-cartable{
+  background-color: #fff;
+  border-radius: 10px;
+  min-height: 121px;
+  position: relative;
+  transition: all 1s;
+  &:hover{
+    text-decoration: none;
+    box-shadow: -2px 2px 7px 1px #d6d6d6;
+  }
+  &:hover .card-cartable-hover{
+    width: 100%!important;
+    text-align: right;
+    margin-right: 200px;
+    position: absolute;
+    transition: all 1s;
+  }
+  &:hover .card-cartable-logo{
+    visibility: hidden;
+  }
+}
+
+.card-cartable-hover{
+  width: 100%;
+}
+
+.card-cartable-white{
+  background-color: #fff;
+  border-radius: 10px;
+  color: #3e3e3e;
+  font-size: large;
+  font-weight: bolder;
+  line-height: 79px;
+  transition: all 1s;
+  &:hover{
+    text-decoration: none;
+  }
+}
+.card-pic-cartable{
+  border-radius: 10px;
+  background-color: #F1F9F8;
+}

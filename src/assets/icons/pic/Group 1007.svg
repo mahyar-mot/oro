@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="700" viewBox="0 0 500 700">
+  <g id="Group_1007" data-name="Group 1007" transform="translate(4099 -3820)">
+    <rect id="pic" width="500" height="700" transform="translate(-4099 3820)" fill="#ebebeb"/>
+    <g id="image" transform="translate(-3964 4055)">
+      <g id="Group_1006" data-name="Group 1006">
+        <g id="Group_1005" data-name="Group 1005">
+          <path id="Path_200" data-name="Path 200" d="M208.63,0H21.582A21.582,21.582,0,0,0,0,21.582V208.63a21.582,21.582,0,0,0,21.582,21.582H208.63a21.582,21.582,0,0,0,21.582-21.582V21.582A21.582,21.582,0,0,0,208.63,0Zm7.194,208.63a7.194,7.194,0,0,1-7.194,7.194H21.582a7.194,7.194,0,0,1-7.194-7.194V21.582a7.194,7.194,0,0,1,7.194-7.194H208.63a7.194,7.194,0,0,1,7.194,7.194Z" fill="#abb3c6"/>
+          <path id="Path_201" data-name="Path 201" d="M200.338,256.556a7.194,7.194,0,0,0-10.144,0L173.647,273.1l-30.863-30.863a7.194,7.194,0,0,0-10.144,0L82.282,292.6a7.194,7.194,0,0,0,5.036,12.23H231.2a7.194,7.194,0,0,0,5.108-12.3Z" transform="translate(-44.153 -132.169)" fill="#abb3c6"/>
+          <circle id="Ellipse_84" data-name="Ellipse 84" cx="22.101" cy="22.101" r="22.101" transform="translate(115.106 56.17)" fill="#abb3c6"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

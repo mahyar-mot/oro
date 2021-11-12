@@ -1,0 +1,145 @@
+.box-picturize {
+  position: relative;
+
+  &:hover {
+    .body-picturize {
+      opacity: 1;
+
+      &::before {
+        height: 100%;
+        transition: all .3s;
+      }
+    }
+  }
+
+}
+
+.card-picturize {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 150px;
+  background-color: #fff;
+}
+
+.head-picturize {
+  background-color: $ColorMainDark;
+  border-radius: 5px 5px 0 0;
+  color: #fff;
+  font-size: .88rem;
+
+  p {
+    margin: 0;
+  }
+}
+
+.footer-picturize {
+  border-radius: 0 0 5px 5px;
+  width: 100%;
+  background-color: #fff;
+  font-size: .88rem;
+}
+
+.border-right-green {
+  border-right: 1px solid $ColorMainDark;
+}
+
+.body-picturize {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  position: relative;
+  z-index: 10;
+  transition: all .3s;
+
+  &::before {
+    content: "";
+    background: transparent linear-gradient(180deg, #FFFFFF2B 0%, var(--unnamed-color-ffffff) 100%) 0% 0% no-repeat padding-box;
+    background: transparent linear-gradient(180deg, #FFFFFF2B 0%, #FFFFFF 100%) 0% 0% no-repeat padding-box;
+    width: 100%;
+    height: 0;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 0;
+    transition: all .3s;
+  }
+}
+
+.image-box-modal {
+  .ant-modal-content {
+    height: 99vh;
+  }
+}
+
+.img-slider-costume {
+  width: 90%;
+  height: 70vh;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: inline-block;
+}
+
+.img-thumb-costume {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+}
+
+.slick-dots.slick-thumb {
+  li {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 3px;
+  }
+  li.slick-active{
+    img{
+      border: 2px solid red;
+    }
+  }
+}
+
+.slick-dots {
+  bottom: -65px;
+}
+
+.ant-modal-footer {
+  border: 0;
+}
+
+.slick-next:before, [dir=rtl] .slick-prev:before {
+  content: '∟';
+  color: #000;
+
+
+}
+
+.slick-prev:before {
+  content: '∟';
+  color: #000;
+}
+
+.slick-next, .slick-prev {
+  border: 1px solid #000;
+  border-radius: 50%;
+  width: 38px;
+  height: 38px;
+  margin-right: 10px;
+  margin-left: 10px;
+  z-index: 100;
+}
+
+.slick-next {
+  transform: rotate(223deg);
+}
+
+.slick-prev {
+  transform: rotate(43deg);
+}
+
+.slick-next:before, .slick-prev:before {
+  font-size: 27px;
+}

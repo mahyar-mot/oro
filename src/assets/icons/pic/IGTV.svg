@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="210.448" viewBox="0 0 300 210.448">
+  <g id="IGTV" transform="translate(6202 -4137)">
+    <g id="Group_1011" data-name="Group 1011" transform="translate(-2103 260)">
+      <path id="pic" d="M10,0H290a10,10,0,0,1,10,10V210.448a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V10A10,10,0,0,1,10,0Z" transform="translate(-4099 3877)" fill="#ebebeb"/>
+      <path id="movie-player-play-button" d="M39.179,0A39.179,39.179,0,1,0,78.359,39.179,39.177,39.177,0,0,0,39.179,0ZM57.927,42.325,34.557,58.4a3.818,3.818,0,0,1-5.984-3.145V23.1a3.818,3.818,0,0,1,5.984-3.145l23.37,16.077a3.818,3.818,0,0,1,0,6.291Z" transform="translate(-3988 3943)" fill="#abb3c6"/>
+    </g>
+    <g id="Group_1189" data-name="Group 1189" transform="translate(4 1235)">
+      <g id="icons8-igtv" transform="translate(-6099 3069.131)">
+        <path id="Path_1931" data-name="Path 1931" d="M17.29,3,13.145,7.145,9,3" transform="translate(1.908)" fill="none" stroke="#abb3c6" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"/>
+        <path id="Path_1932" data-name="Path 1932" d="M26.105,11.908V20.2A6.916,6.916,0,0,1,19.2,27.105h-8.29A6.916,6.916,0,0,1,4,20.2v-8.29A6.916,6.916,0,0,1,10.908,5H19.2A6.916,6.916,0,0,1,26.105,11.908ZM15.388,18.774l5.526-1.382a1.381,1.381,0,0,0-.669-2.68l-3.812.952v-.993a1.382,1.382,0,0,0-1.717-1.34L9.191,14.713a1.381,1.381,0,1,0,.67,2.68l3.81-.952v.993a1.381,1.381,0,0,0,1.717,1.34Z" transform="translate(0 0.763)" fill="#abb3c6"/>
+      </g>
+      <text id="IGTV-2" data-name="IGTV" transform="translate(-6017 3094)" fill="#abb3c6" font-size="22" font-family="ArialMT, Arial"><tspan x="-51.337" y="0">IGTV</tspan></text>
+    </g>
+  </g>
+</svg>

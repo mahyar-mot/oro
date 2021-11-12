@@ -1,0 +1,167 @@
+#printDiv{
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  /* background: rgb(204,204,204);  */
+  direction: rtl;
+}
+#page {
+  background: white;
+  /* padding: 1.3cm 1.8cm; */
+  display: block;
+  /* width: 21cm;
+  height: 29.7cm;  */
+  /* margin: 0 auto; */
+  /* margin-bottom: 0.5cm; */
+  /* box-shadow: 0 0 0.5cm rgba(0,0,0,0.5); */
+}
+/* page[size="A4"] {
+width: 21cm;
+height: 29.7cm;
+} */
+@page {
+  size: A4;
+}
+@page :left {
+  margin-left: 0;
+}
+
+@page :right {
+  margin-right: 0;
+}
+
+.cart {
+  width: 9.5cm;
+  height: 5.72cm;
+  padding: 1mm 0.5cm ;
+  /*width: 8.5cm;*/
+  /*height: 5.5cm;*/
+  /*width: 8.2cm;*/
+  /*height: 5.3cm;*/
+}
+.cart-content {
+  padding-top: 1.5cm;
+  padding-right: 2.4cm;
+  display: flex;
+  justify-content: space-between;
+  /*margin-top: 1.8cm;*/
+  /*margin-right: 1.9cm;*/
+}
+.box {
+  padding-top: 6mm;
+  padding-right: 8mm;
+  width: 21cm;
+  max-height: 29.5cm;
+  /*margin-top: 1.3cm;*/
+  /*margin-right: 1.8cm;*/
+  /*width: 17.4cm;*/
+  /*max-height: 27.2cm;*/
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: .5cm;
+}
+.cart-content div{
+  /* display: inline-block; */
+  float: right;
+}
+.texts{
+  max-width: 3.5cm;
+  width: 3.5cm;
+  height: 2.8cm;
+  padding-top: .9mm;
+}
+span{
+  margin-bottom: .3cm;
+  font-size: x-small;
+  max-width: 3.2cm;
+  display: block;
+}
+.pics{
+  max-height: 2.8cm;
+  height: 2.8cm;
+  max-width: 2.1cm;
+  width: 2.1cm;
+  margin-left: 3mm;
+}
+.pics img{
+  max-width: 2.1cm;
+  max-height: 2.8cm;
+}
+@media print {
+  @page {
+    size: A4;
+  }
+  /*body{*/
+  /*    width: 21cm;*/
+  /*    height: 29.7cm;*/
+  /*    !* change the margins as you want them to be. *!*/
+  /*} */
+
+  .cart {
+    width: 9.5cm;
+    height: 5.72cm;
+    padding: 1mm 0.5cm ;
+    /*width: 8.5cm;*/
+    /*height: 5.5cm;*/
+    /*width: 8.2cm;*/
+    /*height: 5.3cm;*/
+  }
+  .cart-content {
+    padding-top: 1.5cm;
+    padding-right: 2.4cm;
+    display: flex;
+    justify-content: space-between;
+    /*margin-top: 1.8cm;*/
+    /*margin-right: 1.9cm;*/
+  }
+  .box {
+    padding-top: 6mm;
+    padding-right: 8mm;
+    width: 21cm;
+    max-height: 29.5cm;
+    /*margin-top: 1.3cm;*/
+    /*margin-right: 1.8cm;*/
+    /*width: 17.4cm;*/
+    /*max-height: 27.2cm;*/
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: .5cm;
+  }
+  .cart-content div{
+    /* display: inline-block; */
+    float: right;
+  }
+  .texts{
+    max-width: 3.5cm;
+    width: 3.5cm;
+    height: 2.8cm;
+    padding-top: .9mm;
+  }
+  span{
+    margin-bottom: .3cm;
+    font-size: x-small;
+    max-width: 3.2cm;
+    display: block;
+  }
+  .pics{
+    max-height: 2.8cm;
+    height: 2.8cm;
+    max-width: 2.1cm;
+    width: 2.1cm;
+    margin-left: 3mm;
+  }
+  .pics img{
+    max-width: 2.1cm;
+    max-height: 2.8cm;
+  }
+}
+}

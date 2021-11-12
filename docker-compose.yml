@@ -1,0 +1,14 @@
+version: "3"
+
+services:
+    app:
+        container_name: "oro_gallery_front"
+        image: node:lts-alpine
+        volumes:
+            - .:/app
+            - /app/node_modules
+        ports:
+            - 3000:3000
+        working_dir: /app
+        tty: true
+        command: sh -c "yarn install && yarn start"

@@ -1,0 +1,134 @@
+.project-tabs {
+    background: $backgroundColor2 0% 0% no-repeat padding-box;
+    border: 1px solid $borderColor;
+    border-radius: 10px 10px 10px 10px;
+    direction: rtl;
+    ul {
+        padding-right: 1px;
+        li {
+            cursor: pointer;
+        }
+    }
+}
+
+.active-tab {
+    color: $ColorMainDark!important;
+    border-color: whitesmoke $borderColor $ColorMainDark $borderColor!important;
+}
+
+.project-stat-card {
+    border: 1px solid $borderColor;
+    border-radius: 10px;
+    min-width: 165px;
+    min-height: 170px;
+    padding: .5em;
+    &.active {
+        background-color: #E5F5FC;
+        border-color: $gradiantColor1;
+    }
+}
+
+.carousel-control {
+    width: 74px;
+    //height: 32px;
+    background: $colorGray2 0% 0% no-repeat padding-box;
+    border-radius: 100px;
+    padding: 2px 1px !important;
+    box-sizing: content-box;
+}
+
+
+.post-filters {
+    min-height: 94px;
+    background-color: $backgroundColor;
+}
+
+.post-filters-btn {
+    background: $backgroundColor2 0% 0% no-repeat padding-box;
+    border: 1px solid $borderColor;
+    border-radius: 21px;
+}
+
+.post-filters-collapse-btn {
+    background-color: white;
+    border-color: $gradiantColor2;
+    color: $gradiantColor2;
+    &:hover{
+        background-color: white;
+        color: $gradiantColor2;
+        border-color: $gradiantColor2;
+    }
+    &:focus{
+        background-color: white;
+        color: $gradiantColor2;
+        border-color: $gradiantColor2;
+    }
+}
+
+.filters{
+    background-color: $backgroundColorfilters;
+    min-height: 168px;
+}
+
+.filters-input {
+    border: 1px solid $borderColor;
+    border-radius: 28px;
+    //max-width: 150px;
+}
+
+.image-tag {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 16px 0px 0px 16px;
+    top: 0;
+    right: 0;
+}
+
+.image-tag-reverse {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 0 16px 16px 0;
+    top: 0;
+    left: 0;
+}
+
+.card-background-alt{
+    background: rgba($color: #98E28C, $alpha: .1) 0 0 no-repeat padding-box; 
+    border-color: #98E28C;
+}
+
+.card-background-deactivate{
+    background: rgba($color: #3e3e3e, $alpha: .6) 0 0 no-repeat padding-box !important; 
+    border-color: #3e3e3e!important;
+    color: #3e3e3e!important;
+
+    & img {
+        filter: grayscale(100%) blur(1px);
+    }
+
+}
+
+
+.post-modal {
+    background-color: $backgroundColor;
+
+    @media screen and (max-width: 568px) {
+        max-height: none!important;
+      }
+}
+.inputUpload {
+    opacity: 0;
+    position: relative;
+    z-index: 2;
+    max-width: 140px;
+    min-height: 50px;
+}
+.layerUpload {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 1px solid #ccc;
+    @include radius(5px);
+    min-height: 30px;
+    border-radius: 5px;
+}
