@@ -6,7 +6,7 @@ import {USER_PROFILE} from '../../utils/constants';
 
 
 const initialUserState = localStorage.getItem('user') ? JSON.parse(localStorage.getItem('user')) : {
-    isLoggedIn: false,
+    isLoggedIn: true,
     nationalNumber: undefined,
 }
 

@@ -60,7 +60,7 @@ export default function HeaderComponent(props) {
     )
 
     return (
-        <div className={`headerResponsive d-flex justify-content-between ${className}`} >
+        <div className="d-flex justify-content-between" >
             {/*{React.createElement(this.state.collapsed ? MenuUnfoldOutlined : MenuFoldOutlined, {*/}
             {/*    className: 'trigger',*/}
             {/*    onClick: this.toggle,*/}

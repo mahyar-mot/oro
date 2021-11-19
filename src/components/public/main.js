@@ -20,14 +20,13 @@ export default function Main(props) {
     const {openMenu} = useSelector(state => state.pages);
     const [collapsed, setCollapsed] = useState(openMenu)
     const [isOpenResponsive, setIsOpenResponsive] = useState(false)
+
     const toggle = () => {
         let t = !collapsed;
         dispatch(ChangeMenu(t))
         setCollapsed(t)
-        // console.log("!collapsed",!collapsed)
-
     };
-    // console.log( dispatch(ChangeMenu(false)))
+
     return (
         // <>
         //     <Navbar />
@@ -37,8 +36,8 @@ export default function Main(props) {
         //     </div>
         // </>
 
-        <Layout className="" style={{height: "100vh", backgroundColor: "#F8F8F8"}}>
-            {
+        <Layout className="" style={{height: "100vh"}}>
+            {/* {
                 isLoggedIn ? (
                     <Sider
                         collapsedWidth="82px"
@@ -56,27 +55,21 @@ export default function Main(props) {
                     >
                         <SiderComponent collapsed={collapsed} toggle={toggle}/>
                     </Sider>) : ''
-            }
+            } */}
 
             <Layout className="">
-                <div className={`menu-close ${isOpenResponsive && "menu-close-open"}`}
-                     onClick={() => setIsOpenResponsive(false)}/>
+                <div/>
                 <Header
-
-                    className={`border-bottom sidebar-responsive ${(!collapsed ? "padding-right-control" : "padding-right-unControl")}`}
+                    className="px-xl-5 px-4"
                     style={{
-                        // width: isLoggedIn ? "89%" : "100%",
-                        // paddingRight:(!collapsed ? "0px" : "80px"),
                         transition: "padding .2s",
-                        // paddingRight: isLoggedIn ? (!collapsed ? "300px" : "130px") : 0,
                         width: "100%",
                         zIndex: "1",
                         backgroundColor: "white",
-                        // marginRight: isLoggedIn ? "250px" : 0,
                         position: "fixed",
                         top: 0,
+                        height: "110px"
                     }}
-
                 >
                     <HeaderComponent
                         {...props}
@@ -85,41 +78,40 @@ export default function Main(props) {
                     />
                 </Header>
 
-                {isLoggedIn ? <Breadcrumb crumbs={props.crumbs}
+                {/* {isLoggedIn ? <Breadcrumb crumbs={props.crumbs}
                                           className={`${(!collapsed ? "padding-right-control" : "padding-right-unControl")}`}
-                /> : ''}
-                <div className="style-image-background" style={{backgroundImage: `url(${backgroundIcon})`}}>
+                /> : ''} */}
+                <div>
                     <Content
-                        className={`${(!collapsed ? "padding-right-control" : "padding-right-unControl")}`}
                         style={{
                             transition: "padding .2s",
-                            padding: "140px 10px",
-                            // paddingRight: isLoggedIn ? (!collapsed ? "300px" : "130px") : 0,
-                            // marginRight: isLoggedIn ? "250px" : 0,
+                            padding: "140px 0",
                             height: "auto",
                             minHeight: "100vh",
-                            backgroundColor: "transparent",
+                            backgroundColor: "white",
 
                         }}
                     >
-                        <div className="text-right p-0 px-xl-4 py-xl-0" style={{paddingBottom: "100px"}}>
+                        <div className="text-right p-0 px-xl-5 px-0 py-xl-0" style={{paddingBottom: "100px"}}>
                             {isLoggedIn || (props.children[1].type?.displayName === "Login") ? props.children :
                                 <Redirect to="/login"/>}
                         </div>
                     </Content>
                 </div>
-                <Footer style={{
+                <Footer
+                    className="px-xl-5 px-4"
+                    style={{
                     // width: isLoggedIn ? "89%" : "100%",
                     // paddingRight: isLoggedIn ? (!collapsed ? "300px" : "130px") : 0,
-                    width: "100%",
-                    fontColor: "#1456A8",
-                    // marginRight: isLoggedIn ? "250px" : 0, 
-                    position: 'fixed',
-                    bottom: 0
+                    // width: "100%",
+                    // fontColor: "#1456A8",
+                    // // marginRight: isLoggedIn ? "250px" : 0, 
+                    // position: 'fixed',
+                    // bottom: 0
                 }}
-                        className={`text-center bg-white py-3 font-main-color ${(!collapsed ? "padding-right-control" : "padding-right-unControl")}`}
+                        // className={`text-center bg-white py-3 font-main-color ${(!collapsed ? "padding-right-control" : "padding-right-unControl")}`}
                 >
-                    <small className="footer-text">کلیه حقوق این سامانه نزد هیئت مرکزی نظارت بر انتخابات شوراهای اسلامی
+                    <small>کلیه حقوق این سامانه نزد هیئت مرکزی نظارت بر انتخابات شوراهای اسلامی
                         کشور
                         محفوظ است
 

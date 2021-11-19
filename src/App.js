@@ -60,9 +60,9 @@ function MainApp() {
                   }));
                 props.crumbs = crumbs;
                 props.loginRequired = loginRequired
-                if (NON_LAYOUT_PAGES.filter( item =>  String(props.location.pathname).includes(item)).length ){
-                  return <AlternateMain {...props} > <Component {...props} /> </AlternateMain>
-                }
+                // if (NON_LAYOUT_PAGES.filter( item =>  String(props.location.pathname).includes(item)).length ){
+                //   return <AlternateMain {...props} > <Component {...props} /> </AlternateMain>
+                // }
 
                 if (requiredRoles){
                   if (!roleChecker(requiredRoles)){
