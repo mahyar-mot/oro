@@ -5,6 +5,7 @@ import classnames from "classnames";
 import Navbar from './navbar';
 import Breadcrumb from './breadcrumb';
 import HeaderComponent from './header';
+import FooterComponent from './footer';
 import SiderComponent from './sider';
 import backgroundIcon from "../../assets/icons/pic/background.jpg"
 import {Layout} from 'antd';
@@ -66,8 +67,8 @@ export default function Main(props) {
                         width: "100%",
                         zIndex: "1",
                         backgroundColor: "white",
-                        position: "fixed",
-                        top: 0,
+                        // position: "fixed",
+                        // top: 0,
                         height: "110px"
                     }}
                 >
@@ -100,24 +101,9 @@ export default function Main(props) {
                 </div>
                 <Footer
                     className="px-xl-5 px-4"
-                    style={{
-                    // width: isLoggedIn ? "89%" : "100%",
-                    // paddingRight: isLoggedIn ? (!collapsed ? "300px" : "130px") : 0,
-                    // width: "100%",
-                    // fontColor: "#1456A8",
-                    // // marginRight: isLoggedIn ? "250px" : 0, 
-                    // position: 'fixed',
-                    // bottom: 0
-                }}
-                        // className={`text-center bg-white py-3 font-main-color ${(!collapsed ? "padding-right-control" : "padding-right-unControl")}`}
+                        className="bg-white text-right"
                 >
-                    <small>کلیه حقوق این سامانه نزد هیئت مرکزی نظارت بر انتخابات شوراهای اسلامی
-                        کشور
-                        محفوظ است
-
-
-                    </small>
-
+                    <FooterComponent />
                 </Footer>
             </Layout>
         </Layout>

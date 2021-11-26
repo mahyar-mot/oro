@@ -2,14 +2,14 @@ import React from 'react';
 import { Menu, Dropdown, Typography, Row, Col, Button, Drawer } from 'antd';
 import { useSelector, useDispatch } from "react-redux";
 import {useHistory} from 'react-router-dom';
-import {AiOutlineHeart} from 'react-icons/ai';
-import {AiOutlineLogout} from 'react-icons/ai';
-import { ReactComponent as ProfileLogo } from "../../assets/icons/profile picture.svg";
+import {AiOutlineHeart, AiOutlineSearch, AiOutlineLogout, AiOutlineShopping, AiOutlineUser, } from 'react-icons/ai';
+import { BiPhoneCall } from "react-icons/bi";
+import { ReactComponent as ProfileLogo } from "../../assets/icons/profile picture.svg";//TODO:delete
 import { logOut } from "../../redux/auth"
 import { getUserProfile } from "../../redux/auth"
-import logo from "../../assets/icons/pic/majles2.svg";
-import menuIcon from "../../assets/icons/pic/menu.svg";
-import logoTop from "../../assets/icons/pic/logoTop.png";
+import logo from "../../assets/icons/pic/majles2.svg";//TODO:delete
+import menuIcon from "../../assets/icons/pic/menu.svg";//TODO:delete
+import logoTop from "../../assets/icons/pic/logoTop.png";//TODO:delete
 import { MenuOutlined } from '@ant-design/icons';
 
 
@@ -171,65 +171,13 @@ export default function HeaderComponent(props) {
             </Col>
             <Col xl={6} lg={7} md={7} sm={20} xs={20}>
                 <div className="">
+                    <Button shape="circle" className="mx-1 bg-oldRoyal" type="primary" icon={<AiOutlineSearch style={{color: "#6261af"}} />} ></Button>
                     <Button shape="circle" className="mx-1 bg-oldRoyal" type="primary" icon={<AiOutlineHeart style={{color: "#6261af"}} />} ></Button>
-                    <Button shape="circle" className="mx-1 bg-oldRoyal" type="primary" icon={<AiOutlineHeart style={{color: "#6261af"}} />} ></Button>
-                    <Button shape="circle" className="mx-1 bg-oldRoyal" type="primary" icon={<AiOutlineHeart style={{color: "#6261af"}} />} ></Button>
-                    <Button shape="circle" className="mx-1 bg-oldRoyal" type="primary" icon={<AiOutlineHeart style={{color: "#6261af"}} />} ></Button>
-                    <Button shape="circle" className="mx-1 bg-oldRoyal" type="primary" icon={<AiOutlineHeart style={{color: "#6261af"}} />} ></Button>
+                    <Button shape="circle" className="mx-1 bg-oldRoyal" type="primary" icon={<AiOutlineShopping style={{color: "#6261af"}} />} ></Button>
+                    <Button shape="circle" className="mx-1 bg-oldRoyal" type="primary" icon={<AiOutlineUser style={{color: "#6261af"}} />} ></Button>
+                    <Button shape="circle" className="mx-1 bg-oldRoyal" type="primary" icon={<BiPhoneCall style={{color: "#6261af"}} />} ></Button>
                 </div>
             </Col>
         </Row>
     )
-
-        // return (
-        //     <div className="d-flex justify-content-between mt-4" >
-        //         <div>
-        //             <Menu onClick={null} className="w-100" selectedKeys={[]} inlineCollapsed={false} mode="horizontal">
-        //                 <Menu.Item style={{width: "120px"}} key="mail">
-        //                     Navigation One
-        //                 </Menu.Item>
-        //                 <Menu.Item style={{width: "120px"}} key="app" >
-        //                     Navigation Two
-        //                 </Menu.Item>
-        //                 <Menu.SubMenu style={{width: "120px"}} key="SubMenu" title="Navigation Three - Submenu">
-        //                     <Menu.ItemGroup title="Item 1">
-        //                         <Menu.Item key="setting:1">Option 1</Menu.Item>
-        //                         <Menu.Item key="setting:2">Option 2</Menu.Item>
-        //                     </Menu.ItemGroup>
-        //                     <Menu.ItemGroup title="Item 2">
-        //                         <Menu.Item key="setting:3">Option 3</Menu.Item>
-        //                         <Menu.Item key="setting:4">Option 4</Menu.Item>
-        //                     </Menu.ItemGroup>
-        //                 </Menu.SubMenu>
-        //                 <Menu.Item style={{width: "120px"}} key="alipay">
-        //                     <a href="https://ant.design" target="_blank" rel="noopener noreferrer">
-        //                         Navigation Four - Link
-        //                     </a>
-        //                 </Menu.Item>
-        //             </Menu>
-        //         </div>
-
-        //         {
-        //             isLoggedIn && (
-        //                 <div>
-        //                     <Dropdown overlay={UserMenu} trigger={['click']} >
-        //                         <div className="d-inline-block text-center ml-2 pointer">
-
-        //                             <span className="bg-white font-main-color d-inline-block"
-        //                                     style={{width: '28px', height: '28px'}}>
-        //                                 <ProfileLogo />
-        //                             </span>
-        //                             <span className="mx-2">
-        //                                 { userProfile.name && userProfile.surname ? `${userProfile.name} ${userProfile.surname}` :nationalNumber}        
-        //                             </span>
-        //                             <span className="font-main-color">
-        //                                     <FiChevronDown className="text-dark" />
-        //                             </span>
-        //                         </div>
-        //                     </Dropdown>
-        //                 </div>
-        //             )
-        //         }
-        //     </div>
-        // )
 }
