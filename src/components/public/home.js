@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { useHistory } from 'react-router';
 import { getUserProfile } from '../../redux/auth';
 import { getBasicInfo } from '../../redux/basicInfos';
+import {Button} from 'antd'
 
 
 export default function Home(props) {
@@ -56,7 +57,7 @@ export default function Home(props) {
 
     return (
         <div className="d-flex justify-content-center align-items-center" style={{height: "300px"}}>
-            <h3> </h3>
+            <h3> <Button type="primary">دنیای اورو رو کشف کن</Button></h3>
         </div>
     )
 }

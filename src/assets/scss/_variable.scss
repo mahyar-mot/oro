@@ -18,7 +18,10 @@ $colorGray2: #F3F3F3;
 // $filter: #57595b;
 $ColorGold: #c9a227;
 $ColorOrange: #faa307;
-$ColorMainDark: #9d4edd;
+// $ColorMainDark: #9d4edd;
+// $ColorMainDark: #6261af;
+$ColorMainDark: #6a69c0;
+$ColorMainGold: #b69121;
 $ColorMainDark2: #7b2cbf;
 
 $backgroundColor: #FFF;
@@ -36,7 +39,8 @@ $dangerColor: #E21179;
 
 $theme-colors: (
   "success": #009788,
-  "royal": #9d4edd,
+  "royal": #6a69c0,
+  "oldRoyal": #c7bbd2,
   "oldSuccess": #28a745,
   "goldenroyal": #b69121
 ,);

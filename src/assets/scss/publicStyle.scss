@@ -185,14 +185,6 @@ span{
 
 // btn
 
-.ant-btn{
-  border-radius: 5px;
-}
-
-.ant-btn-lg{
-  height: 42px;
-}
-
 .ant-btn-primary {
   background-color: $ColorMainDark;
   &:hover,&:focus{
@@ -432,17 +424,21 @@ iframe {
   width: 100%;
 }
 .link-color{
-  color:$ColorMainDark !important; ;
+  color:$ColorMainGold !important; ;
 }
 .ant-menu-item-selected a, .ant-menu-item-selected a:hover ,.ant-menu-item-active{
-  color: $ColorMainDark !important;
+  color: $ColorMainGold !important;
 }
 .ant-menu-item-active,.ant-menu-submenu-active,.ant-menu-submenu-open{
-  color: $ColorMainDark !important;
+  color: $ColorMainGold !important;
   a,span,.ant-menu-submenu-arrow{
-    color: $ColorMainDark !important;
+    color: $ColorMainGold !important;
   }
 }
+.ant-menu-submenu-selected{
+  color: $ColorMainGold !important;
+}
+
 .ant-pagination-item-active{
   border-color: $ColorMainDark !important;
 }
@@ -474,13 +470,13 @@ a {
 
 }
 a:hover {
-  color: $gradiantColor2;
+  color: $ColorMainGold;
 }
 a:active {
   color: $ColorMainDark;
 }
 .ant-menu-item a:hover {
-  color: $ColorMainDark;
+  color: $ColorMainGold;
 }
 .ant-btn-primary {
   color: #fff;
@@ -523,7 +519,7 @@ a:active {
   border-color: $ColorMainDark;
 }
 .ant-menu-item:hover, .ant-menu-item-active, .ant-menu:not(.ant-menu-inline) .ant-menu-submenu-open, .ant-menu-submenu-active, .ant-menu-submenu-title:hover{
-  color: $ColorMainDark;
+  color: $ColorMainGold;
 }
 
 // loading icon
@@ -581,4 +577,12 @@ a:active {
 .slick-custom-thumb {
   max-height: 90px;
   overflow: scroll;
+}
+
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item:hover, .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu:hover, .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-active, .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu-active, .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-open, .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu-open, .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-selected, .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu-selected{
+  color: $ColorMainGold;
+}
+
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item:hover::after, .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu:hover::after, .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-active::after, .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu-active::after, .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-open::after, .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu-open::after, .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-selected::after, .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu-selected::after {
+  border-bottom: 2px solid $ColorMainGold;
 }
