@@ -185,6 +185,10 @@ span{
 
 // btn
 
+.ant-btn-lg{
+  height: 48px;
+}
+
 .ant-btn-primary {
   background-color: $ColorMainDark;
   &:hover,&:focus{
@@ -368,7 +372,7 @@ th:first-child {
 
 .border-rounded{
   border: 1px solid $borderColor;
-  border-radius: 10px;
+  border-radius: 7px;
 }
 
 .svg-color-main {

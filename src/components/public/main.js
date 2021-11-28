@@ -100,8 +100,7 @@ export default function Main(props) {
                     </Content>
                 </div>
                 <Footer
-                    className="px-xl-5 px-4"
-                        className="bg-white text-right"
+                    className="bg-white text-right px-3 px-md-5"
                 >
                     <FooterComponent />
                 </Footer>
