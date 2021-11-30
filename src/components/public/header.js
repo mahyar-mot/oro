@@ -7,7 +7,7 @@ import { BiPhoneCall } from "react-icons/bi";
 import { ReactComponent as ProfileLogo } from "../../assets/icons/profile picture.svg";//TODO:delete
 import { logOut } from "../../redux/auth"
 import { getUserProfile } from "../../redux/auth"
-import logo from "../../assets/icons/pic/majles2.svg";//TODO:delete
+import { ReactComponent as Logo } from "../../assets/icon/logo.svg";//TODO:delete
 import menuIcon from "../../assets/icons/pic/menu.svg";//TODO:delete
 import logoTop from "../../assets/icons/pic/logoTop.png";//TODO:delete
 import { MenuOutlined } from '@ant-design/icons';
@@ -84,13 +84,11 @@ export default function HeaderComponent(props) {
 
     const MenuContent = (props) => (
         <Menu
-            inlineIndent={0}
             style={{borderBottom: 0}}
             mode={ drawerVisible ? "inline" : 'horizontal'}
-            // className="justify-content-md-between"
             defaultSelectedKeys={["SubMenu"]}
         >
-            <Menu.SubMenu className="px-xl-4 px-lg-2 px-1" key="SubMenu" title="محصولات">
+            <Menu.SubMenu className="pl-xl-4 pl-lg-2 pl-1" key="SubMenu" title="محصولات">
                 <Menu.ItemGroup title="Item 1">
                     <Menu.Item key="setting:1">Option 1</Menu.Item>
                     <Menu.Item key="setting:2">Option 2</Menu.Item>
@@ -100,7 +98,7 @@ export default function HeaderComponent(props) {
                     <Menu.Item key="setting:4">Option 4</Menu.Item>
                 </Menu.ItemGroup>
             </Menu.SubMenu>
-            <Menu.SubMenu className="px-xl-4 px-lg-2 px-1" key="SubMenu2" title="کالکشن">
+            <Menu.SubMenu className="pl-xl-4 pl-lg-2 pl-1" key="SubMenu2" title="کالکشن">
                 <Menu.ItemGroup title="Item 1">
                     <Menu.Item key="setting:1">Option 1</Menu.Item>
                     <Menu.Item key="setting:2">Option 2</Menu.Item>
@@ -110,7 +108,7 @@ export default function HeaderComponent(props) {
                     <Menu.Item key="setting:4">Option 4</Menu.Item>
                 </Menu.ItemGroup>
             </Menu.SubMenu>
-            <Menu.SubMenu className="px-xl-4 px-lg-2 px-1" key="SubMenu3" title="کالکشن صورفلکی">
+            <Menu.SubMenu className="pl-xl-4 pl-lg-2 pl-1" key="SubMenu3" title="کالکشن صورفلکی">
                 <Menu.ItemGroup title="Item 1">
                     <Menu.Item key="setting:1">Option 1</Menu.Item>
                     <Menu.Item key="setting:2">Option 2</Menu.Item>
@@ -121,21 +119,21 @@ export default function HeaderComponent(props) {
                 </Menu.ItemGroup>
             </Menu.SubMenu>
             <Menu.Item
-                className="px-xl-4 px-lg-2 px-1"
+                className="pl-xl-4 pl-lg-2 pl-1"
                 key={"item3"}
                 onClick={() => ("item3")}
             >
                 درباره‌ما
             </Menu.Item>
             <Menu.Item
-                className="px-xl-4 px-lg-2 px-1"
+                className="pl-xl-4 pl-lg-2 pl-1"
                 key={"item3"}
                 onClick={() => ("item3")}
             >
                 تماس با ما
             </Menu.Item>
             <Menu.Item
-                className="px-xl-4 px-lg-2 px-1"
+                className="pl-xl-4 pl-lg-2 pl-1"
                 key={"item3"}
                 onClick={() => ("item3")}
             >
@@ -146,17 +144,15 @@ export default function HeaderComponent(props) {
 
     return (
         <Row align="middle" style={{height: "100%"}} >
-            <Col xl={1} lg={2} md={3} sm={4} xs={4}>
-                <div className="d-md-none d-block">
+            <Col xl={2} lg={3} md={3} sm={7} xs={7} >
+                <div className="d-flex justify-content-between align-items-center">
                     <Button 
-                        className="border-royal text-royal"
+                        className="border-royal text-royal d-md-none d-inline-block"
                         icon={<MenuOutlined />}
                         onClick={ _ => setDrawerVisible(true) }
                     />
+                    <Logo />
                 </div>
-                <Typography.Title id='title-button' level={4}>
-                    <a onClick={() => ('')}>My App</a>
-                </Typography.Title>
             </Col>
             <Col xl={17} lg={15} md={14} sm={0} xs={0}>
                 {
@@ -169,13 +165,13 @@ export default function HeaderComponent(props) {
                     )
                 }
             </Col>
-            <Col xl={6} lg={7} md={7} sm={20} xs={20}>
+            <Col xl={5} lg={6} md={7} sm={17} xs={17}>
                 <div className="">
-                    <Button shape="circle" className="mx-1 bg-oldRoyal" type="primary" icon={<AiOutlineSearch style={{color: "#6261af"}} />} ></Button>
-                    <Button shape="circle" className="mx-1 bg-oldRoyal" type="primary" icon={<AiOutlineHeart style={{color: "#6261af"}} />} ></Button>
-                    <Button shape="circle" className="mx-1 bg-oldRoyal" type="primary" icon={<AiOutlineShopping style={{color: "#6261af"}} />} ></Button>
-                    <Button shape="circle" className="mx-1 bg-oldRoyal" type="primary" icon={<AiOutlineUser style={{color: "#6261af"}} />} ></Button>
-                    <Button shape="circle" className="mx-1 bg-oldRoyal" type="primary" icon={<BiPhoneCall style={{color: "#6261af"}} />} ></Button>
+                    <Button shape="circle" className="mx-1 bg-oldRoyal text-royal" style={{borderColor: "#AE8EDA"}} type="primary" icon={<AiOutlineSearch style={{color: "#9365CD"}} />} ></Button>
+                    <Button shape="circle" className="mx-1 bg-oldRoyal text-royal" style={{borderColor: "#AE8EDA"}} type="primary" icon={<AiOutlineHeart style={{color: "#9365CD"}} />} ></Button>
+                    <Button shape="circle" className="mx-1 bg-oldRoyal text-royal" style={{borderColor: "#AE8EDA"}} type="primary" icon={<AiOutlineShopping style={{color: "#9365CD"}} />} ></Button>
+                    <Button shape="circle" className="mx-1 bg-oldRoyal text-royal" style={{borderColor: "#AE8EDA"}} type="primary" icon={<AiOutlineUser style={{color: "#9365CD"}} />} ></Button>
+                    <Button shape="circle" className="mx-1 bg-oldRoyal text-royal" style={{borderColor: "#AE8EDA"}} type="primary" icon={<BiPhoneCall style={{color: "#9365CD"}} />} ></Button>
                 </div>
             </Col>
         </Row>

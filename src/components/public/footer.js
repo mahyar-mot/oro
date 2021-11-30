@@ -1,39 +1,21 @@
 import React from 'react';
-import { Menu, Dropdown, Typography, Row, Col, Button, Divider } from 'antd';
-import { useSelector, useDispatch } from "react-redux";
+import { Row, Col, Button, Divider } from 'antd';
 import {useHistory} from 'react-router-dom';
 import { FaShippingFast, FaGooglePlay, FaYoutube, FaInstagram, FaTwitter, FaTelegram } from 'react-icons/fa';
 import { AiOutlineSafetyCertificate } from "react-icons/ai";
-// import { Aparat } from "react-icons/si";
 import { BiSupport } from "react-icons/bi";
-// import { logOut } from "../../redux/auth"
-import { getUserProfile } from "../../redux/auth"
+import LogoIcon from "../../assets/icon/logo2x.png"
 
 
 export default function FooterComponent(props) {
 
-    const { isLoggedIn, nationalNumber, userProfile, apiHasCalled } = useSelector( state => state.auth );
-    const dispatch = useDispatch();
     const history = useHistory()
-    const {className,setIsOpenResponsive}=props
-
-    const [drawerVisible, setDrawerVisible] = React.useState(false);
-
-    React.useEffect( () => {
-        if (props.loginRequired){
-            if (Object.keys(userProfile).length === 1 && !apiHasCalled ){
-                setTimeout( () => dispatch(getUserProfile(nationalNumber)), 1000)
-            }
-        }
-    },[])
 
     return (
-        <div className="px-0 px-md-5">
+        <div className="px-0 px-md-5 pb-4">
             <Row justify="start">
                 <Col xl={24} lg={24} md={24} sm={24} xs={24}>
-                    <Typography.Title id='title-button' level={4}>
-                        <a onClick={() => ('')}>LOGO</a>
-                    </Typography.Title>
+                    <img src={LogoIcon} alt="logo-footer"/>
                 </Col>
             </Row>
             <Row align="middle" className="pt-3">

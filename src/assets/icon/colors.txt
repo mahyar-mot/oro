@@ -1,0 +1,11 @@
+Footer=#F0F0F2
+Nav=#F3F4F5
+Gray=#F8F8F8
+Yellow=#FEF8EB
+MainRoyal=#763FBE
+OldRoyal=#9365CD
+MainRoyal2=#D0BDE9
+MainGold=#C1921F
+MainAlt=#F8B52A
+Border=#AE8EDA
+GrayDark=#9B9B9B
