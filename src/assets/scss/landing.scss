@@ -1,0 +1,15 @@
+.d-grid{
+    display: grid;
+}
+
+.layer1{
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.landing-bg{
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 40%, rgba(254,248,235,1) 59%); 
+    min-height: 700px;
+    top: 80px;
+}

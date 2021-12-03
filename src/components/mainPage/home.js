@@ -3,8 +3,10 @@ import { useDispatch, useSelector } from 'react-redux';
 import { useHistory } from 'react-router';
 import { getUserProfile } from '../../redux/auth';
 import { getBasicInfo } from '../../redux/basicInfos';
-import {Button} from 'antd'
-import Slider from "./slider"
+import Landing from "./landing";
+import Collections from "./collections";
+import { Row, Col, Button} from 'antd';
+import Slider from "./slider";
 
 
 export default function Home(props) {
@@ -57,10 +59,9 @@ export default function Home(props) {
     },[userProfile])
 
     return (
-        <div className="d-flex justify-content-center align-items-center" style={{height: "300px"}}>
-            <h3> <Button type="primary">دنیای اورو رو کشف کن</Button></h3>
-            dddd
-            <Slider />
+        <div className="text-right p-0 px-xl-5 px-0 py-xl-0">
+            <Landing />
+            <Collections />
         </div>
     )
 }

@@ -16,7 +16,7 @@ export default function AlternateMain(props) {
 
     return (
 
-        <Layout className="" style={{height: "100vh"}}>
+        <Layout className="" style={{minHeight: "100vh"}}>
             
                 <Header
 

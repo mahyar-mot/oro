@@ -181,7 +181,16 @@ span{
   clear:both;
 }
 
-
+.divder{
+  position: relative;
+}
+.divider:after{
+  content: '';
+  padding-right: 50px;
+  border-top:5px solid $ColorMainGold;
+  border-radius: 20px;
+  position: absolute;
+}
 
 // btn
 

@@ -37,7 +37,7 @@ export default function Main(props) {
         //     </div>
         // </>
 
-        <Layout className="" style={{height: "100vh"}}>
+        <Layout className="bg-white" style={{minHeight: "100vh"}}>
             {/* {
                 isLoggedIn ? (
                     <Sider
@@ -58,7 +58,7 @@ export default function Main(props) {
                     </Sider>) : ''
             } */}
 
-            <Layout className="">
+            <Layout className="bg-white">
                 <div/>
                 <Header
                     className="px-xl-5 px-4"
@@ -82,23 +82,19 @@ export default function Main(props) {
                 {/* {isLoggedIn ? <Breadcrumb crumbs={props.crumbs}
                                           className={`${(!collapsed ? "padding-right-control" : "padding-right-unControl")}`}
                 /> : ''} */}
-                <div>
-                    <Content
-                        style={{
-                            transition: "padding .2s",
-                            padding: "140px 0",
-                            height: "auto",
-                            minHeight: "100vh",
-                            backgroundColor: "white",
+                <Content
+                    style={{
+                        transition: "padding .2s",
+                        padding: 0,
+                        height: "auto",
+                        minHeight: "100vh",
+                        backgroundColor: "white",
 
-                        }}
-                    >
-                        <div className="text-right p-0 px-xl-5 px-0 py-xl-0" style={{paddingBottom: "100px"}}>
-                            {isLoggedIn || (props.children[1].type?.displayName === "Login") ? props.children :
-                                <Redirect to="/login"/>}
-                        </div>
-                    </Content>
-                </div>
+                    }}
+                >
+                    {isLoggedIn || (props.children[1].type?.displayName === "Login") ? props.children :
+                        <Redirect to="/login"/>}
+                </Content>
                 <Footer
                     className="bg-white text-right px-3 px-md-5 pb-0"
                 >
