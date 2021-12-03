@@ -6,7 +6,9 @@ import { getBasicInfo } from '../../redux/basicInfos';
 import Landing from "./landing";
 import Collections from "./collections";
 import { Row, Col, Button} from 'antd';
-import Slider from "./slider";
+import SliderOne from "./slider";
+import { BsArrowLeft } from "react-icons/bs";
+import Card from "../public/productCard";
 
 
 export default function Home(props) {
@@ -62,6 +64,19 @@ export default function Home(props) {
         <div className="text-right p-0 px-xl-5 px-0 py-xl-0">
             <Landing />
             <Collections />
+            <Row align="middle" justify="space-between"  className="px-md-5 px-3" >
+                <Col xl={8} lg={8} md={24} sm={24} xs={24} className="pr-md-5 pr-3 my-4">
+
+                </Col>
+                <Col xl={8} lg={8} md={24} sm={24} xs={24} className="pl-md-5 pl-3 my-4">
+                    <h4 className="text-goldRoyal text-left pointer">
+                        مشاهده محصولات
+                        <BsArrowLeft size="2rem" />
+                    </h4>
+                </Col>
+            </Row>
+            <SliderOne />
+            <Card />
         </div>
     )
 }
