@@ -4,6 +4,7 @@ import { useHistory } from 'react-router';
 import { getUserProfile } from '../../redux/auth';
 import { getBasicInfo } from '../../redux/basicInfos';
 import {Button} from 'antd'
+import Slider from "./slider"
 
 
 export default function Home(props) {
@@ -58,6 +59,8 @@ export default function Home(props) {
     return (
         <div className="d-flex justify-content-center align-items-center" style={{height: "300px"}}>
             <h3> <Button type="primary">دنیای اورو رو کشف کن</Button></h3>
+            dddd
+            <Slider />
         </div>
     )
 }

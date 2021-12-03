@@ -196,6 +196,22 @@ span{
   }
 }
 
+.btn-oldRoyal:hover {
+  color: #FFF;
+  background-color: $ColorMainDark;
+  border-color: #b597dc;
+}
+
+.oldRoyal-hover:hover {
+  color: $ColorMainDark!important;
+  // background-color: ;
+  border-color: #b597dc;
+}
+
+.svg-oldRoyal-hover:hover > g path{
+  fill: $ColorMainDark;
+}
+
 .ant-btn-secondary {
   color: $ColorMainDark;
   border-color: $ColorMainDark; 

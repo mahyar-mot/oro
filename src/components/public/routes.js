@@ -1,4 +1,4 @@
-import Home from "../public/home";
+import Home from "../mainPage/home";
 import Login from "../login/login";
 import OverseersList from "../overseers/overseersList";
 import AddOverSeer from "../overseers/addOverSeer";
