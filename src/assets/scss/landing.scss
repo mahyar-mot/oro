@@ -28,28 +28,40 @@
     }
 }
 
-.image-content{
-    height: 240px;
+.image-content img{
+    max-height: 288px;
     position: relative;
-    border-radius: 10px;
+    border: 1px solid #FFF;
+    border-radius: 15px;
     width: 100%;
 }
 
-.image-content-big{
-    @extend .image-content;
-    height: 540px;
+.image-content-big img{
+    position: relative;
+    border: 1px solid #FFF;
+    border-radius: 15px;
+    width: 100%;
+    max-height: 442px;
 }
 
 .right-tag{
     position: absolute;
-    top:10px;
-    right:10px;
+    top:20px;
+    right:20px;
+    background-color: $colorGray2;
+    padding: .5rem 1.75rem;
+    border: 1px solid $colorGray2;
+    border-radius: 5px;
 }
 
 .left-tag{
     position: absolute;
-    top:10px;
-    left:10px;
+    top:20px;
+    left:20px;
+    background-color: $colorGray2;
+    padding: .2rem 1.75rem;
+    border: 1px solid $colorGray2;
+    border-radius: 30px;
 }
 
 .bottom-content{

@@ -12,6 +12,7 @@ import Card from "../public/productCard";
 import HomepageSupply from "../../assets/icon/Homepage_Resupply.png";
 import Comments from "./comments";
 import Magazine from "./magazine";
+import ContactUs from "./contactUs";
 
 
 export default function Home(props) {
@@ -141,6 +142,7 @@ export default function Home(props) {
             </Row>
             <Comments />
             <Magazine />
+            <ContactUs />
         </>
     )
 }

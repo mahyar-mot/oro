@@ -15,9 +15,10 @@ export default () => {
   return (
     <Card
         // hoverable
-        className="text-right"
-        style={{ width: 320 }}
+        className="text-right py-3"
+        style={{ width: "278px" }}
         extra={<HeartOutlined {...CardProps} /> }
+        bodyStyle={{padding: "0.5rem"}}
         headStyle={{position: "absolute", border: "none", left: 0}}
         cover={
             <img alt="example" src={RingPic} />
@@ -30,7 +31,7 @@ export default () => {
         ]}
     >
         <Card.Meta 
-            title="انگشتر اوال و چند نگین کوچک اوال سبز" 
+            title={<div>انگشتر اوال و چند نگین کوچک اوال سبز</div>}
             description={
                 <div>
                     <BiDroplet /> رزگلد . زرد . سفید 
