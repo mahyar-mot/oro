@@ -1,4 +1,6 @@
 import Home from "../mainPage/home";
+import Collections from "../collections/colectionsList";
+
 import Login from "../login/login";
 import OverseersList from "../overseers/overseersList";
 import AddOverSeer from "../overseers/addOverSeer";
@@ -84,7 +86,9 @@ import ProtestSuccess from "../newUser/protestSuccess";
 
 
 export default [
-    { path: "/", name: "سامانه", Component: Home, loginRequired: false },
+    { path: "/", name: "خانه", Component: Home, loginRequired: false },
+    { path: "/collections/", name: "کالکشن", Component: Collections, loginRequired: false},
+
     { path: "/login", name: "ورود", Component: Login, loginRequired: false },
     { path: "/signin-oidc", name: "ورود", Component: SignInOidc, loginRequired: false },
     { path: "/notfound", name: "", Component: NotFound404, loginRequired: false },
