@@ -13,3 +13,47 @@
     min-height: 700px;
     top: 80px;
 }
+
+
+.white-box{
+    position: absolute;
+    width: 320px;
+    min-height: 150px;
+    background-color: #FFF;
+    bottom: -40px;
+    right: 14%;
+
+    @media screen and (max-width: 960px) {
+        bottom: -130px;
+    }
+}
+
+.image-content{
+    height: 240px;
+    position: relative;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.image-content-big{
+    @extend .image-content;
+    height: 540px;
+}
+
+.right-tag{
+    position: absolute;
+    top:10px;
+    right:10px;
+}
+
+.left-tag{
+    position: absolute;
+    top:10px;
+    left:10px;
+}
+
+.bottom-content{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}

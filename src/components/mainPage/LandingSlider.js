@@ -19,7 +19,7 @@ export default function LandingSlider(props) {
 
     return (
         <div className="w-100 pr-3">
-            <img src={Pic} className="img-fluid pt-md-0 py-5" />
+            <img src={Pic} className="img-fluid pt-lg-0 py-5" />
             <h4>ست گوشواره و گردنبند</h4>
             <p>
                 لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است

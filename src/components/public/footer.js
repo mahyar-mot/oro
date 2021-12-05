@@ -88,23 +88,23 @@ export default function FooterComponent(props) {
                 </Col>
                 <Col xl={19} lg={19} md={24} sm={24} xs={24}>
                     <div className="d-flex justify-content-md-end justify-content-start flex-wrap">
-                        <Button size="large" style={{minWidth: "150px"}} className="px-4 border-rounded mb-2 mx-3 btn btn-oldRoyal text-white" icon={<SibApp />}>
+                        <Button size="large" style={{minWidth: "130px"}} className="px-4 border-rounded mb-2 mx-3 btn btn-oldRoyal text-white" icon={<SibApp />}>
                             <small style={{fontSize: "10px"}}>دریافت از</small>
                             <span>سیب‌اپ</span>
                         </Button>
-                        <Button size="large" style={{minWidth: "150px"}} className="px-4 border-rounded mb-2 mx-3 btn btn-oldRoyal text-white" icon={<Bazaar />}>
+                        <Button size="large" style={{minWidth: "130px"}} className="px-4 border-rounded mb-2 mx-3 btn btn-oldRoyal text-white" icon={<Bazaar />}>
                             <small style={{fontSize: "10px"}}>دریافت از</small>
                             <span>بازار</span>
                         </Button>
-                        <Button size="large" style={{minWidth: "150px"}} className="px-4 border-rounded mb-2 mx-3 btn btn-oldRoyal text-white" icon={<FaGooglePlay size="1.5rem" />}>
+                        <Button size="large" style={{minWidth: "130px"}} className="px-4 border-rounded mb-2 mx-3 btn btn-oldRoyal text-white" icon={<FaGooglePlay size="1.5rem" />}>
                             <small style={{fontSize: "10px"}}>دریافت از</small>
                             <span>گوگل‌پلی</span>
                         </Button>
-                        <Button size="large" style={{minWidth: "150px"}} className="px-4 border-rounded mb-2 mx-3 btn btn-oldRoyal text-white" icon={<FaApple size="1.5rem" />}>
+                        <Button size="large" style={{minWidth: "130px"}} className="px-4 border-rounded mb-2 mx-3 btn btn-oldRoyal text-white" icon={<FaApple size="1.5rem" />}>
                             <small style={{fontSize: "10px"}}>نسخه</small>
                             <span>وب اپلیکیشن</span>
                         </Button>
-                        <Button size="large" style={{minWidth: "150px"}} className="px-4 border-rounded mb-2 mx-3 btn btn-oldRoyal text-white" icon={<Myket />}>
+                        <Button size="large" style={{minWidth: "130px"}} className="px-4 border-rounded mb-2 mx-3 btn btn-oldRoyal text-white" icon={<Myket />}>
                             <small style={{fontSize: "10px"}}>دریافت از</small>
                             <span>مایکت</span>
                         </Button>

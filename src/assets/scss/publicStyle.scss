@@ -192,6 +192,21 @@ span{
   position: absolute;
 }
 
+.line-alt:after{
+  content: '';
+  padding-right: 350px;
+  border-top:5px solid $ColorOrange;
+  border-radius: 20px;
+  position: absolute;
+}
+
+.divider-royal:after{
+  content: '';
+  padding-right: 50px;
+  border-top:5px solid $ColorMainDark;
+  border-radius: 20px;
+  position: absolute;
+}
 // btn
 
 .ant-btn-lg{
@@ -571,6 +586,16 @@ a:active {
   color: $ColorMainDark;
 }
 
+.ant-card-actions{
+  border-top: none;
+}
+
+.comment-card{
+  width: 640px;
+  @media screen and (max-width: 643px) {
+    width: 320px
+  }
+}
 
 .list-alternate-bg {
   // background-color: #F1F9F8 0% 0% no-repeat padding-box;

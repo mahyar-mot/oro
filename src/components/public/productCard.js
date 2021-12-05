@@ -5,7 +5,7 @@ import { BiDroplet } from "react-icons/bi";
 import RingPic from "../../assets/icon/11.png";
 
 const CardProps = {
-    className: "text-royal",
+    className: "text-royal pointer",
     style: { fontSize: '1.75em' },
 }
 
@@ -15,6 +15,7 @@ export default () => {
   return (
     <Card
         // hoverable
+        className="text-right"
         style={{ width: 320 }}
         extra={<HeartOutlined {...CardProps} /> }
         headStyle={{position: "absolute", border: "none", left: 0}}
@@ -24,7 +25,7 @@ export default () => {
         actions={[
             <div className="text-left position-relative ml-4">
                 29345000
-                <span className="position-absolute pt-2" style={{transform: "rotate(-90deg)"}}>تومان</span>
+                <span className="position-absolute pt-3 pl-2" style={{transform: "rotate(-90deg)"}}>تومان</span>
             </div>
         ]}
     >
