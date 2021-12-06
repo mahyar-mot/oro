@@ -588,7 +588,14 @@ a:active {
 
 .ant-card-actions{
   border-top: none;
+  padding: 1rem;
 }
+
+.ant-collapse-icon-position-right > .ant-collapse-item > .ant-collapse-header .ant-collapse-arrow {
+  right: auto;
+  left:16px;
+}
+
 
 .comment-card{
   width: 572px;

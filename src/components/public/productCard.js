@@ -16,15 +16,15 @@ export default () => {
     <Card
         // hoverable
         className="text-right py-3"
-        style={{ width: "278px" }}
+        style={{ width: "auto" }}
         extra={<HeartOutlined {...CardProps} /> }
         bodyStyle={{padding: "0.5rem"}}
         headStyle={{position: "absolute", border: "none", left: 0}}
         cover={
-            <img alt="example" src={RingPic} />
+            <img alt="example" src={RingPic}  />
         }
         actions={[
-            <div className="text-left position-relative ml-4">
+            <div className="text-left position-relative ml-4 font-weight-bold">
                 29345000
                 <span className="position-absolute pt-3 pl-2" style={{transform: "rotate(-90deg)"}}>تومان</span>
             </div>
