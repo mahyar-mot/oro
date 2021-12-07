@@ -79,18 +79,18 @@ import AddProceeding from "../proceedings/create";
 // import TagCreate from "../tag/tagCreate";
 // import FavoritismCreate from "../subjects/favoritismManage";
 // import UsersList from "../users/usersList";
-import SignInOidc from "../login/signin_oidc";
 // import ComplaintUser from "../newUser/complaintUser";
 import ComplaintUser from "../newUser/violationUser";
 import ProtestSuccess from "../newUser/protestSuccess";
+import SignUp from "../login/signUp";
 
 
 export default [
     { path: "/", name: "خانه", Component: Home, loginRequired: false },
     { path: "/collections/", name: "کالکشن", Component: Collections, loginRequired: false},
-
     { path: "/login", name: "ورود", Component: Login, loginRequired: false },
-    { path: "/signin-oidc", name: "ورود", Component: SignInOidc, loginRequired: false },
+    { path: "/signup", name: "ثبت‌نام", Component: SignUp, loginRequired: false },
+
     { path: "/notfound", name: "", Component: NotFound404, loginRequired: false },
     { path: "/waitinguser", name: "در حال بررسی", Component: WaitingUser, loginRequired: true },
     { path: "/profile", name: "اطلاعات کاربری", Component: WaitingUser, loginRequired: true },

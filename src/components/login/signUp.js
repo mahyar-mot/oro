@@ -8,7 +8,7 @@ import { FaUserCircle } from "react-icons/fa";
 import { useLocation, useHistory } from 'react-router';
 
 
-export default function Login(props) {
+export default function SignUp(props) {
 
     const dispatch = useDispatch();
     const params = useLocation()
@@ -123,10 +123,10 @@ export default function Login(props) {
                     </div>
                     <div className="login-body py-3 mx-auto">
                         <p className="text-bold font-gray-color">
-                            ورود به حساب کاربری
+                            ساخت حساب حساب کاربری
                         </p>
                         <Form
-                            name="login"
+                            name="signup"
                             labelCol={{ span: 6 }}
                             wrapperCol={{ span: 14 }}
                             initialValues={{ remember: true }}
@@ -149,17 +149,36 @@ export default function Login(props) {
                             >
                                 <Input.Password />
                             </Form.Item>
+                            <Form.Item
+                                label="تکرار رمزعبور"
+                                name="passwordRepeat"
+                                rules={[{ required: true, message: 'Please input your password!' }]}
+                            >
+                                <Input.Password />
+                            </Form.Item>
+                            <Form.Item
+                                label="تاریخ تولد"
+                                name="passwordRepeat"
+                                rules={[{ required: true, message: 'Please input your password!' }]}
+                            >
+                                <Input />
+                            </Form.Item>
+                            <Form.Item
+                                label="نام و نام‌خانوادگی"
+                                name="passwordRepeat"
+                                rules={[{ required: true, message: 'Please input your password!' }]}
+                            >
+                                <Input />
+                            </Form.Item>
                         </Form>
-                        <small className="my-3 text-right pr-3 d-block">فراموشی رمز عبور</small>
                     </div>
                 </div>
             </div>
             <div className="d-flex justify-content-center">
-                <Button size="large" className=" ml-3 px-3" type="secondary" >ایجاد حساب کاربری</Button>
-                <Button size="large" type="primary" className="px-3" >ورود به حساب</Button>
+                <Button size="large" className=" ml-3 px-3" type="secondary" >ورود به حساب</Button>
+                <Button size="large" type="primary" className="px-3" >ایجاد حساب</Button>
             </div>
         </div>
     )
 }
 
-Login.displayName="Login";
