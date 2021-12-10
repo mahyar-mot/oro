@@ -83,6 +83,7 @@ import AddProceeding from "../proceedings/create";
 import ComplaintUser from "../newUser/violationUser";
 import ProtestSuccess from "../newUser/protestSuccess";
 import SignUp from "../login/signUp";
+import Product from "../product/product";
 
 
 export default [
@@ -90,6 +91,7 @@ export default [
     { path: "/collections/", name: "کالکشن", Component: Collections, loginRequired: false},
     { path: "/login", name: "ورود", Component: Login, loginRequired: false },
     { path: "/signup", name: "ثبت‌نام", Component: SignUp, loginRequired: false },
+    { path: "/product", name: "محصول", Component: Product, loginRequired: false },
 
     { path: "/notfound", name: "", Component: NotFound404, loginRequired: false },
     { path: "/waitinguser", name: "در حال بررسی", Component: WaitingUser, loginRequired: true },
