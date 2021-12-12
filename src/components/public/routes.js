@@ -13,5 +13,5 @@ export default [
     { path: "/signup", name: "ثبت‌نام", Component: SignUp, loginRequired: false },
     { path: "/product", name: "محصول", Component: Product, loginRequired: false },
     // { path: "/overseers", name: "ناظران", Component: OverseersList, loginRequired: true, requiredRoles:["1.1"] },
-
+    { path: "/profile", name: "محصول", Component: Product, loginRequired: false },
 ];
