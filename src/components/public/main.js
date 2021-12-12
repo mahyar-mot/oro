@@ -9,7 +9,7 @@ import FooterComponent from './footer';
 import SiderComponent from './sider';
 import backgroundIcon from "../../assets/icons/pic/background.jpg"
 import {Layout} from 'antd';
-import {ChangeMenu} from "../../redux/pages/menu"
+// import {ChangeMenu} from "../../redux/pages/menu"
 import Support from "./support";
 
 const {Header, Footer, Sider, Content} = Layout;
@@ -18,14 +18,11 @@ const {Header, Footer, Sider, Content} = Layout;
 export default function Main(props) {
     const dispatch = useDispatch()
     const {isLoggedIn} = useSelector(state => state.auth);
-    const {openMenu} = useSelector(state => state.pages);
-    const [collapsed, setCollapsed] = useState(openMenu)
+
     const [isOpenResponsive, setIsOpenResponsive] = useState(false)
 
     const toggle = () => {
-        let t = !collapsed;
-        dispatch(ChangeMenu(t))
-        setCollapsed(t)
+
     };
 
     return (

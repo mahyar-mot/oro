@@ -3,8 +3,8 @@ import {Badge, Menu} from 'antd';
 import { useSelector, useDispatch } from 'react-redux';
 import {NavLink as NavLinkRouter} from "react-router-dom";
 // import {ReactComponent as Logo} from "../../assets/icons/pic/majles.svg";
-import { ChangeActiveSelectedKey, getDashboardStats } from "../../redux/pages/menu";
-import { getContentsCount } from "../../redux/contents/contentsList";
+// import { ChangeActiveSelectedKey, getDashboardStats } from "../../redux/pages/menu";
+// import { getContentsCount } from "../../redux/contents/contentsList";
 import logo from "../../assets/icons/pic/majles.svg";
 import {ReactComponent as DashLogo} from "../../assets/icons/dashboard.svg";
 import {ReactComponent as ReportLogo} from "../../assets/icons/flag_black.svg";
@@ -35,7 +35,7 @@ function SiderComponent(props) {
     React.useEffect( () => {
         let now = Date.now() / 1000 | 0;
         if (now - dashboardStatsCallTime > 120){
-            dispatch(getDashboardStats())
+            // dispatch(getDashboardStats())
         }
     }, [activeSelectedKey])
 
@@ -45,7 +45,7 @@ function SiderComponent(props) {
             <div className="text-center" style={{height: "64px", backgroundColor: "#009788"}}>
                 <img src={logo} className="img-fluid" alt=""/>
             </div>
-            <div>
+            {/* <div>
                 <Menu mode="inline"
                     defaultSelectedKeys={[activeSelectedKey]}
                     defaultOpenKeys={activeOpenKeys}
@@ -55,12 +55,7 @@ function SiderComponent(props) {
                             <span>کارتابل</span>
                         </NavLinkRouter>
                     </Menu.Item>
-                    {/* <Menu.Item style={{height: "55px"}} className="pt-2 pb-1" key="1" icon={  <DashLogo className="pl-2" />}>
-                        <DashLogo className="pl-2" />
-                        <NavLinkRouter className="text-decoration-none" onClick={ () => dispatch(ChangeActiveSelectedKey("1"))} to="/waitinguser">
-                            <span>داشبورد</span>
-                        </NavLinkRouter>
-                    </Menu.Item> */}
+
                     {
                         roles.includes("1.1") && (
                             <Menu.Item style={{height: "55px"}} className="pt-2 pb-1" key="2"  icon={  <NazeranLogo className="pl-2" />}>
@@ -106,12 +101,6 @@ function SiderComponent(props) {
                             </Menu.SubMenu>
                         )
                     }
-
-                    {/* <Menu.Item style={{height: "55px"}} className="pt-2 pb-1" key="7"  icon={  <ComplaintLogo className="pl-2" />}>
-                        <NavLinkRouter className="text-decoration-none" onClick={ () => dispatch(ChangeActiveSelectedKey("7"))} to="/complaints">
-                            <span>ثبت اعتراض </span>
-                        </NavLinkRouter>
-                    </Menu.Item> */}
                     {
                         roles.includes("4.1") && (
                             <Menu.Item style={{height: "55px"}} className="pt-2 pb-1" key="9"  icon={  <NazeranLogo className="pl-2" />}>
@@ -131,18 +120,12 @@ function SiderComponent(props) {
                         )
                     }
 
-                    {/*<Menu.SubMenu key="sub2" icon={<ViolationIcon className="pl-2" />} title=" تخلفات">*/}
                         <Menu.Item style={{height: "55px"}} className="pt-2 pb-1" key="12" icon={<ViolationIcon className="pl-2" />}>
                             <NavLinkRouter onClick={ () => dispatch(ChangeActiveSelectedKey("12"))} className="text-decoration-none" to="/violations">
                                 <span >لیست تخلفات</span>
                             </NavLinkRouter>
                         </Menu.Item>
-                        {/* <Menu.Item style={{height: "55px"}} className="pt-2 pb-1" key="11">*/}
-                        {/*    <NavLinkRouter onClick={ () => dispatch(ChangeActiveSelectedKey("11"))} className="text-decoration-none" to="/monitoring">*/}
-                        {/*        <span> مانیتورینگ</span>*/}
-                        {/*    </NavLinkRouter>*/}
-                        {/*</Menu.Item>*/}
-                    {/*</Menu.SubMenu>*/}
+
                     {
                         (roles.includes("1.7") || roles.includes("1.25") || roles.includes("5.11") || roles.includes("1.8") || roles.includes("5.12") ) && (
                             <Menu.SubMenu key="sub2" icon={<MonitoringIcon className="pl-2" />} title="  گزارشات">
@@ -207,8 +190,8 @@ function SiderComponent(props) {
                             </Menu.SubMenu>
                         )
                     }
-                    {/* {
-                        (roles.includes("7.1") || roles.includes("7.6") || roles.includes("7.10") ) && ( */}
+                    {
+                        (roles.includes("7.1") || roles.includes("7.6") || roles.includes("7.10") ) && (
                             <Menu.SubMenu key="sub4" icon={<HomeOutlined className="pl-2" />} title="مدیریت شعب">
                                 {
                                     roles.includes("7.1") && (
@@ -246,18 +229,18 @@ function SiderComponent(props) {
                                         </Menu.Item>
                                     )
                                 }
-                                {/* {
-                                    roles.includes("8.1") && ( */}
+                                {
+                                    roles.includes("8.1") && (
                                         <Menu.Item style={{height: "55px"}} className="pt-2 pb-1" key="26">
                                             <NavLinkRouter className="text-decoration-none" onClick={ () => dispatch(ChangeActiveSelectedKey("26"))} to="/proceedings">
                                                 <span>صورتجلسات</span>
                                             </NavLinkRouter>
                                         </Menu.Item>
-                                    {/* )
-                                } */}
+                                    )
+                                }
                             </Menu.SubMenu>
-                        {/* )
-                    } */}
+                        )
+                    }
                     {
                         roles.includes("1.6") && (
                             <Menu.Item style={{height: "55px"}} className="pt-2 pb-1" key="4"  icon={ <AdminLogo className="pl-2" />}>
@@ -311,7 +294,7 @@ function SiderComponent(props) {
                         </NavLinkRouter>
                     </Menu.Item>
                 </Menu>
-            </div>
+            </div> */}
         </div>
             <div className="trigger pl-2 pointer text-center pb-3 d-none d-lg-block" onClick={toggle}>
                             <img src={menuIcon} style={{width:'20px',transition:"all .2s"}} className={`img-fluid ${collapsed ? "rotate180" : ""}`} alt=""/>

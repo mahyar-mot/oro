@@ -3,15 +3,15 @@ import {Redirect} from "react-router-dom";
 import {useDispatch, useSelector} from "react-redux";
 import HeaderComponent from './header';
 import {Layout} from 'antd';
-import {ChangeMenu} from "../../redux/pages/menu"
+// import {ChangeMenu} from "../../redux/pages/menu"
 const {Header, Footer, Sider, Content} = Layout;
 
 
 export default function AlternateMain(props) {
     const dispatch = useDispatch()
     const {isLoggedIn} = useSelector(state => state.auth);
-    const {openMenu} = useSelector(state => state.pages);
-    const [collapsed, setCollapsed] = useState(openMenu)
+
+    const [collapsed, setCollapsed] = useState(true)
     const [isOpenResponsive, setIsOpenResponsive] = useState(false)
 
     return (

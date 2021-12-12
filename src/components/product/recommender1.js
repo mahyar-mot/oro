@@ -26,7 +26,7 @@ export default function Recommender1(props) {
     return (
         <div className="position-relative pt-3">
             <div className="mt-5 px-md-5 px-0">
-                <div className="bg-gray position-absolute" style={{height: "570px", opacity: .2, width: "95%", top: "50px"}}></div>
+                <div className="bg-gray position-absolute" style={{height: "570px", opacity: .1, width: "95%", top: "50px"}}></div>
             </div>
             <Row justify="space-between" className="my-4" >
                 <Col spn={24} className="my-4 mx-5 px-md-5 px-0 w-100">
